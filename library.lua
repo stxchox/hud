@@ -83,16 +83,16 @@ end
 
   if not isfolder("PPHUD") then
     makefolder("PPHUD")
+  end
 
-    if not isfile("PPHUD/Arrow.png") then
-        local Arrow = request({Url = "https://raw.githubusercontent.com/stxchox/hud/main/dropdown.png", Method = "GET"})
-        writefile("PPHUD/Arrow.png", Arrow.Body)
-    end
+  if not isfile("PPHUD/Arrow.png") then
+    local Arrow = request({Url = "https://raw.githubusercontent.com/stxchox/hud/main/dropdown.png", Method = "GET"})
+    writefile("PPHUD/Arrow.png", Arrow.Body)
+  end
 
-    if not isfile("PPHUD/Resize.png") then
-        local Resize = request({Url = "https://raw.githubusercontent.com/stxchox/hud/main/resize.png", Method = "GET"})
-        writefile("PPHUD/Resize.png", Resize.Body)
-    end
+  if not isfile("PPHUD/Resize.png") then
+    local Resize = request({Url = "https://raw.githubusercontent.com/stxchox/hud/main/resize.png", Method = "GET"})
+    writefile("PPHUD/Resize.png", Resize.Body)
   end
   --//
   
